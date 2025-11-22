@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Home | Animations</title>
+</head>
+<body>
+    <div class="transition">
+        <div class="transition-row row-1">
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+        <div class="transition-row row-2">
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+    </div>
+    <div class="text-[#1a1a1a]">
+        <nav class="border-b-2 border-[#3d211a]">
+            <div class="logo">
+                <a href="index.html" class="beige-outline">Animations</a>
+            </div>
+            <div class="nav-items">
+                <a href="index.html" class="bg-[#f5f5dc] py-2 px-3 rotate-3 font-medium">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+        <div class="h-screen w-full flex flex-col justify-center items-center enter-animation">
+            <h1 class="text-[40vh] font-medium beige-outline">Home</h1>
+            <div class="flex flex-col justify-center items-center animate-bounce">
+                <p class="text-sm">Scroll down</p>
+                <img src="./images/chevron-down.png" alt="">
+            </div>
+        </div>
+        <div class="enter-animation h-screen w-full flex flex-row items-center justify-center px-5 mt-8">
+            <div class="w-1/2">
+                <h1 class="text-8xl font-semibold">Welcome to <span class="beige-outline">Animations</span></h1>
+                <p class="text-2xl">Explore various animations and transitions.</p>
+            </div>
+            <div class="w-1/2">
+                <img src="./images/Innovation-rafiki.svg" alt="Random svg">
+            </div>
+        </div>
+        <div class="flex flex-col justify-center items-center border-[#3d211a] py-10 gap-4">
+            <h1 class="text-6xl font-semibold">This website was made with</h1>
+            <div class="flex flex-row justify-between gap-5 items-center">
+                <p class="text-2xl p-4 bg-[#cbb799] stack-box-hover">GSAP</p>
+                <p class="text-2xl p-4 bg-[#cbb799] stack-box-hover">TailwindCSS</p>
+                <p class="text-2xl p-4 bg-[#cbb799] stack-box-hover">Lenis</p>
+            </div>
+        </div>
+        <div class="stack-container flex flex-col justify-center items-center border-[#3d211a] py-[100px] gap-4 px-5">
+            <h1 class="text-6xl font-semibold">Anyway here is a cool animation</h1>
+            <div class="flex flex-row justify-between gap-5 items-center">
+                <div class="text-2xl p-5 bg-[#cbb799] stack-box stack-box-1">
+                    <h1 class="font-semibold">GSAP</h1>
+                    <p>Powerful animation library</p>
+                </div>
+                <div class="text-2xl p-5 bg-[#cbb799] stack-box stack-box-2">
+                    <h1 class="font-semibold">TailwindCSS</h1>
+                    <p>Utility-first CSS framework</p>
+                </div>
+                <div class="text-2xl p-5 px-6 bg-[#cbb799] stack-box stack-box-3">
+                    <h1 class="font-semibold">Lenis</h1>
+                    <p>Smooth scrolling library</p>
+                </div>
+            </div>
+        </div>
+        <div class="w-full flex flex-row justify-center items-center border-[#3d211a] pt-[200px] gap-4 px-5">
+            <div class="w-1/2">
+                <h1 class="text-6xl font-semibold">End of said "cool" animation</h1>
+            </div>
+            <div class="w-1/2">
+                <img src="./images/Innovation-rafiki.svg" alt="">
+            </div>
+        </div>
+
+        
+    </div>
+
+
+<!-- npm package CDN -->
+
+<!-- they include GSAP, TailwindCSS, Lenis -->
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<script src="https://unpkg.com/lenis@1.3.15/dist/lenis.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+<script src="transition.js"></script>
+<script src="home-page-animations.js"></script>
+</body>
+</html>
