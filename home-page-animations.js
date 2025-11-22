@@ -14,8 +14,9 @@ document.addEventListener("DOMContentLoaded", ()=>{
     document.querySelectorAll(".stack-box-hover").forEach((box)=>{
         box.addEventListener("mouseenter", ()=>{
             gsap.to(box, {
-                scale: 1.1,
+                scale: 1.2,
                 rotate: "random(-10, 10)",
+                boxShadow: "0px 0px 20px 2px rgb(111, 77, 56)",
                 duration: 0.3,
                 ease: "power2.out"
             })
@@ -34,25 +35,29 @@ document.addEventListener("DOMContentLoaded", ()=>{
     }
     });
 
+
+    const ease = "expo";
+
+
     tl.to(".stack-box-1", {
         scale: 3,
         duration: 1,
         y: 160,
         x: 400,
-        boxShadow: "0px 0px 20px 5px rgb(111, 77, 56)",
-        // rotate: "random(-10, 10)",
+        boxShadow: "0px 0px 30px 2px rgb(111, 77, 56)",
+        rotate: "random(-10, 10)",
         zIndex: 1,
-        ease: "power2.inOut"
+        ease: ease
     }, ">");
 
     tl.to(".stack-box-2", {
         scale: 3,
         duration: 1,
         y: 180,
-        boxShadow: "0px 0px 20px 5px rgb(111, 77, 56)",
-        // rotate: "random(-10, 10)",
+        boxShadow: "0px 0px 30px 2px rgb(111, 77, 56)",
+        rotate: "random(-10, 10)",
         zIndex: 1,
-        ease: "power2.inOut"
+        ease: ease
     }, ">");
 
     tl.to(".stack-box-3", {
@@ -60,10 +65,10 @@ document.addEventListener("DOMContentLoaded", ()=>{
         duration: 1,
         y: 200,
         x: -400,
-        boxShadow: "0px 0px 20px 5px rgb(111, 77, 56)",
-        // rotate: "random(-10, 10)",
+        boxShadow: "0px 0px 30px 2px rgb(111, 77, 56)",
+        rotate: "random(-10, 10)",
         zIndex: 1,
-        ease: "power2.inOut"
+        ease: ease
     }, ">");
 
     ScrollTrigger.refresh();

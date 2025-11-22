@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Circular Std';
+    font-family: 'Circular';
     src: url('./circular-std-medium-500.ttf') format('truetype');
 }
 
@@ -8,7 +8,7 @@
     src: url('./arniek.otf') format('opentype');
 }
 @font-face {
-    font-family: 'Zolando Expanded';
+    font-family: 'Zolando';
     src: url('./ZalandoSansExpanded-VariableFont_wght.ttf') format('opentype');
 }
 
@@ -17,7 +17,7 @@ body::-webkit-scrollbar{
 }
 
 body{
-    font-family: 'Zolando Expanded', sans-serif;
+    font-family: 'Zolando', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -112,7 +112,7 @@ nav{
     will-change: transform;
 }
 
-.beige-outline{
+.khaki-outline{
     text-shadow:
        -2px -2px 0 #cbb799,
         2px -2px 0 #cbb799,

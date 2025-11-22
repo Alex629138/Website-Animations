@@ -1,10 +1,8 @@
 document.addEventListener('DOMContentLoaded', () =>{
 
-    const lenis = new Lenis({
-		autoRaf: true,
-	});
+    const lenis = new Lenis({autoRaf: true,});
 
-    const ease = "power4.inOut";
+    const ease = "bounce";
 
 
     document.querySelectorAll("a").forEach((link) => {
@@ -13,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () =>{
             const href = link.getAttribute("href");
 
 
-            if((href && !href.startsWith("#")) && (href != window.location.href)){
+            if((href && !href.startsWith("#")) && (href !== window.location.href)){
                 animateTransition().then(()=>{
                     window.location.href = href;
                 })
