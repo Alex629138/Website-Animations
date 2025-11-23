@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () =>{
 
     const lenis = new Lenis({autoRaf: true,});
 
-    const ease = "bounce";
+    const ease = "power4.inOut";
 
 
     document.querySelectorAll("a").forEach((link) => {
